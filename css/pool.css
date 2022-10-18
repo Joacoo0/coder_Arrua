@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: rgb(255, 255, 255);
+    background: cover;
+    background-position: center;
+    color: black;
+    margin: 0px;
+  }
+
+header {
+    display: flex;
+    height: 70px;
+    background-color: #000000;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 55px;
+    margin-right: 10px;
+    border-radius: 50px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: whitesmoke;
+  }
+  
+  nav a {
+    transition: 2s;
+    font-weight: 600;
+    padding-right: 20px;
+    color: whitesmoke;
+  }
+  
+  nav a:hover {
+    transform: scale(1.8);
+    color: #17C3B2;
+  }
+
+  .title{
+    font-family: sans-serif;
+    font-size: 1.4em;
+  }
+
+  .nuestro-pool p{
+    font-size: 1.5em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .foto-pool img{
+    width: 20%;
+    height: 10%;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
