@@ -1,7 +1,7 @@
 * {
-    margin: 0;
-    padding: 0;
-  }
+  margin: 0;
+  padding: 0;
+}
 body {
   background-color: #e2e4dc;
   color: aliceblue;
@@ -54,8 +54,19 @@ nav a:hover {
 /* fin-nav */
 
 .fondo {
-    background: rgb(0,0,0);
-    background: radial-gradient(circle, rgba(0,0,0,1) 10%, rgba(0,17,27,1) 91%);
+  background: rgb(0, 0, 0);
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 10%,
+    rgba(0, 17, 27, 1) 91%
+  );
+  height: 50vh;
+  width: 100%;
+  
+}
+
+.conjunto{
+padding-top: 50px;
 }
 
 .texto {
@@ -63,17 +74,15 @@ nav a:hover {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  font-size: 1.4em;
+  font-size: 1.6em;
   list-style-type: none;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   padding-top: 30px;
-  
 }
 
 .texto ul {
   list-style-type: none;
-  
 }
 
 .title {
@@ -81,7 +90,7 @@ nav a:hover {
   align-items: center;
   justify-content: center;
   padding-top: 30px;
-  font-size: 2.2em;
+  font-size: 2.6em;
   margin: 0px;
 }
 
@@ -90,17 +99,17 @@ nav a:hover {
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1.4em;
   font-family: Georgia, "Times New Roman", Times, serif;
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.contactos ul{
+.contactos ul {
   list-style-type: none;
 }
 
-.contactos a:hover{
+.contactos a:hover {
   color: beige;
 }
 
@@ -108,27 +117,20 @@ nav a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgb(176, 195, 204);
-  background: radial-gradient(
-    circle,
-    rgba(176, 195, 204, 1) 10%,
-    rgba(223, 228, 231, 1) 80%
-  );
+  background: rgb(217,255,255);
+  background: linear-gradient(0deg, rgba(217,255,255,1) 0%, rgba(127,131,131,1) 100%);
   height: 100vh;
   width: 100%;
-
-
 }
-.fondo2 img{
+.fondo2 img {
   width: 20%;
   height: 30%;
   border-radius: 35px;
   padding: 10px;
   border-color: gray;
-  
 }
 
-.fotos{
+.fotos {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -179,32 +181,63 @@ footer {
   color: #002aff;
 }
 
-
-
-.grilla-contacto{
-  background-color: black;
+.grilla-contacto {
+  background-color: #00000010;
   width: 80%;
   height: 80%;
   display: grid;
-  grid-template-areas: 
-  "mesas mesas barra"
-  "fichas tragos pool"
-  "comidas tragos platos"
-  ;
+  grid-template-areas:
+    "mesas mesas barra"
+    "fichas tragos pool"
+    "comidas tragos platos";
   grid-gap: 10px;
   padding: 10px;
 }
 
-.cerveza{
-  background-color: whitesmoke;
+.mesas {
+  background-image: url(../img/mesas-abajo.jpg);
+  background-size: cover;
+  background-position: center;
   grid-area: mesas;
 }
-.tragos{
-  background-color: red;
+
+.platos {
+  background-image: url(../img/barra-pool.jpg);
+  background-size: cover;
+  background-position: center;
+  grid-area: platos;
+}
+.tragos {
+  background-image: url(../img/centro.png);
+  background-size: cover;
+  background-position: center;
   grid-area: tragos;
 }
 
-.barra{
-  background-color: violet;
+.barra {
+  background-image: url(../img/labajada.png);
+  background-size: cover;
+  background-position: center;
   grid-area: barra;
+}
+
+.fichas {
+  background-image: url(../img/pool.jpg);
+  background-size: cover;
+  background-position: center;
+  grid-area: fichas;
+}
+
+.comidas {
+  background-image: url(../img/pool-abajo.jpeg);
+  background-size: cover;
+  background-position: center;
+  grid-area: comidas;
+}
+
+.pool {
+  background-image: url(../img/barra-vieja.png);
+  background-size: cover;
+  background-position: center;
+  grid-area: pool;
 }
