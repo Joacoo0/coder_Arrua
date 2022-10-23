@@ -1,137 +1,163 @@
 * {
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    background-image: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5)
-      ),
-      url(./fondo.jpg);
-      background-position: center;
-    background-position: center;
-    color: whitesmoke;
-    margin: 0px;
-  }
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0px;
+  color: whitesmoke;
+}
 
 header {
-    display: flex;
-    height: 70px;
-    background-color: #000000;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    font-family: Georgia, "Times New Roman", Times, serif;
-  }
+  display: flex;
+  height: 70px;
+  background-color: #000000;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
 
-  .logo {
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo img {
-    height: 55px;
-    margin-right: 10px;
-    border-radius: 50px;
-  }
-  
-  a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-  }
-  
-  nav a {
-    transition: 2s;
-    font-weight: 600;
-    padding-right: 20px;
-    color: whitesmoke;
-  }
-  
-  nav a:hover {
-    transform: scale(1.8);
-    color: #17C3B2;
-  }
+.logo {
+  display: flex;
+  align-items: center;
+}
 
-  /* fin-nav */
+.logo img {
+  height: 55px;
+  margin-right: 10px;
+  border-radius: 50px;
+}
 
-  .titulo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 25px;
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
 
-    background-color: #00000036; 
+nav a {
+  transition: 2s;
+  font-weight: 600;
+  padding-right: 20px;
+  color: whitesmoke;
+}
 
-  }
-  
+nav a:hover {
+  transform: scale(1.8);
+  color: #17c3b2;
+}
 
-  .modalidad h3{
-    font-size: 1.7em;
-    font-family: sans-serif;
-  }
+/* fin-nav */
 
-  .modalidad{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 30px;
-    font-size: 1.1em;
-  }
+.fondo1 {
+  background: rgb(0, 0, 0);
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 10%,
+    rgba(8, 4, 38, 1) 91%
+  );
+  width: 100%;
+  height: 90%;
+}
 
-  .precios h3{
-    font-size: 1.7em;
-    font-family: sans-serif;
-  }
+.fondo1 .lugar-grilla{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  .precios{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 30px;
-    font-size: 1.1em;
-  }
+.lugar-grilla {
+  background-color: #ff1515;
+  width: 80%;
+  height: 80%;
+  display: grid;
+  grid-template-areas:
+    "mesas mesas barra"
+    "fichas tragos pool"
+    "comidas tragos platos";
+  grid-gap: 10px;
+  padding: 10px;
+}
 
-  footer {
-    background-color: #011627;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  .titulo-footer {
-    color: #fdfffc;
-    display: flex;
-    justify-content: center;
-    padding-bottom: 20px;
-    padding-top: 20px;
-  }
-  .copy {
-    color: #acadbcc2;
-    display: flex;
-    justify-content: center;
-    padding-top: 20px;
-    padding-bottom: 5px;
-  }
-  
-  .redes-sociales {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .redes-sociales i {
-    font-size: 27px;
-    padding: 10px;
-  }
-  
-  .redes-sociales a {
-    transition: 0, 3s;
-  }
-  
-  .redes-sociales a:hover {
-    transform: scale(1.1);
-    color: orangered;
-  }
-  
-  
-  
-  
+.mesas {
+  background-image: url(../img/mesas-abajo.jpg);
+  background-size: cover;
+  background-position: center;
+  grid-area: mesas;
+}
+
+.platos {
+  background-image: url(../img/barra-pool.jpg);
+  background-size: cover;
+  background-position: center;
+  grid-area: platos;
+}
+.tragos {
+  background-image: url(../img/centro.png);
+  background-size: cover;
+  background-position: center;
+  grid-area: tragos;
+}
+
+.barra {
+  background-image: url(../img/labajada.png);
+  background-size: cover;
+  background-position: center;
+  grid-area: barra;
+}
+
+.fichas {
+  background-image: url(../img/pool.jpg);
+  background-size: cover;
+  background-position: center;
+  grid-area: fichas;
+}
+
+/* FOOTER */
+
+footer {
+  background: rgb(8, 23, 48);
+  background: linear-gradient(
+    0deg,
+    rgba(8, 23, 48, 1) 0%,
+    rgba(40, 116, 117, 0.9108018207282913) 100%
+  );
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.titulo-footer {
+  color: #fdfffc;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.copy {
+  color: #acadbcc2;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+.redes-sociales {
+  display: flex;
+  justify-content: center;
+}
+
+.redes-sociales i {
+  font-size: 27px;
+  padding: 10px;
+}
+
+.redes-sociales a {
+  transition: 0, 3s;
+}
+
+.redes-sociales a:hover {
+  transform: scale(1.1);
+  color: #002aff;
+}
+
+/* FIN-FOOTER */
+
+/* --FIN-- */
